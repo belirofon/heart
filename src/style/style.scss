@@ -1,0 +1,115 @@
+body {
+  max-width: 1250px;
+  height: 100vw;
+  font-size: 1.6rem;
+  margin: 0;
+  margin-left: 10%;
+  background: linear-gradient(rgba(51, 51, 51, 0.295), rgba(255, 0, 85, 0.329),rgb(255, 255, 255));
+  background-size: 100% 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.header {
+  position: fixed;
+  top: -5%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15%;
+}
+.js-item {
+  position: fixed;
+}
+.heart-wrapper {
+ & .heart {
+   min-width: 70vh;
+   min-height: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content: center;
+ }
+ 
+}
+
+.love-image {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 25%;
+}
+.main-title {
+  margin-top: 25%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.btn {
+  margin-top: -25%;
+}
+
+
+
+ .footer.hidden {
+   & *div,p {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    z-index: -999;
+   }
+   
+ }
+ .love-image.active {
+  display: block;
+  width: 80%;
+  height: auto;
+  overflow: visible;
+  position: static;
+  z-index: 1;
+ }
+
+ .popup {
+   display: none;
+   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+ }
+
+ @media (max-width: 700px) { 
+  body {
+    padding: 0;
+    font-size: 1rem;
+    width: auto;
+    height: 100vw;
+    & .heart-wrapper {
+      width: auto;
+      height: auto;
+    }
+    & .main-title {
+      font-size: 2.4rem;
+    }
+    & .wrapper {
+        margin-top: -3rem;
+    }
+    .btn {
+      margin-top: -3rem;
+    }
+    
+  }
+  .js-item {
+    max-width: 60%;
+    position: fixed;
+    top: 37%;
+    left: 30%;
+  }
+ }
