@@ -5,9 +5,10 @@ const title = document.querySelector('.main-title');
 const button = document.querySelector('.glow-button');
 const imageArr = document.querySelectorAll('.love-image');
 const footer = document.querySelector('.footer');
-const audio = document.getElementsByTagName('audio');
+const audio = document.getElementsByTagName('video');
 const itemsWrapper = document.querySelector('.js-item');
 const popup = document.querySelector('.popup');
+
 
 
 for(let i = 0; i < imageArr.length; i++)
@@ -28,8 +29,11 @@ const buttonHandleClicker = () => {
         heart.style.width = "600px";
         heart.style.height = "600px";
         toogleHidden()
+        elem.addEventListener('click', () => {
+          elem.classList.toggle('active');
+        })
       })
-    }
+    } 
   })
 }
 

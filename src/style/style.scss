@@ -73,11 +73,11 @@ body {
  }
  .love-image.active {
   display: block;
-  width: 80%;
-  height: auto;
-  overflow: visible;
-  position: static;
-  z-index: 1;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  min-width: 600px;
+  min-height: 600px;
  }
 
  .popup {
@@ -113,3 +113,4 @@ body {
     left: 30%;
   }
  }
+ 
